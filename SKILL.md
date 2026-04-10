@@ -1,5 +1,5 @@
 ---
-name: excalidraw-diagram-skill
+name: excalidraw
 description: Create concise, polished Excalidraw diagrams as complete .excalidraw JSON files and provide lightweight PNG export guidance. Use when an agent needs to produce flowcharts, architecture diagrams, component maps, relationship diagrams, process overviews, or interaction diagrams for Codex, Claude Code, Cursor, Cline, OpenCode, or similar agent runtimes without relying on renderer scripts.
 ---
 
