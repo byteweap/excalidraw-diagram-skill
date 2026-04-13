@@ -11,6 +11,7 @@ Best for procedures, approvals, and operational steps.
 - Keep at most 1 or 2 decision diamonds.
 - Put terminal outcomes at the edges, not in the middle.
 - Prefer one label per arrow only when the branch meaning is unclear.
+- Reorder sibling steps before allowing crossing branches.
 
 Suggested structure:
 
@@ -29,6 +30,8 @@ Best for systems, services, integrations, and platform boundaries.
 - Put core services in the center.
 - Put data stores below or beside the services they support.
 - Distinguish compute, storage, and external systems by color, not by many shapes.
+- Place related services in aligned lanes so data flow stays mostly parallel.
+- If one service talks to many nodes, consider centering it or introducing a clearer grouping layer.
 
 Suggested structure:
 
@@ -47,6 +50,7 @@ Best for ownership, dependency, and concept mapping.
 - Keep line crossings low by clustering related peers.
 - Use containers only when they add hierarchy.
 - Keep labels noun-based and short.
+- Prefer moving a node cluster over drawing long crossing connectors through the board.
 
 Suggested structure:
 
@@ -62,6 +66,7 @@ Best for lightweight sequence or message flow explanations.
 - Keep only the critical messages.
 - Collapse repeated chatter into one labeled arrow.
 - Prefer 4 to 6 interactions for a compact view.
+- Reorder participants left-to-right when that reduces line crossings.
 
 Suggested structure:
 
@@ -76,3 +81,4 @@ If the requested diagram is getting crowded:
 - Reduce detail before increasing decoration.
 - Merge minor nodes into grouped labels.
 - Split one complex diagram into two smaller diagrams when the story naturally separates.
+- Re-layout first; if crossings still dominate, split the diagram instead of forcing everything onto one board.

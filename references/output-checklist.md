@@ -19,6 +19,8 @@ Run this pass before returning the final result.
 - Container headers have their own vertical space.
 - Diamond labels stay inside the safe central area.
 - Arrows between nodes are bound, not floating, so dragging a node keeps the connector attached.
+- The diagram does not contain unnecessary connector crossings.
+- If crossings remain, the layout was already simplified and the remaining crossings are limited.
 
 ## Visual Quality
 

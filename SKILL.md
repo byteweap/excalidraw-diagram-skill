@@ -49,6 +49,7 @@ For both modes:
 - Leave generous whitespace between groups.
 - Use short labels, usually 2 to 6 words.
 - Keep connectors straight or with a single bend when possible.
+- Minimize connector crossings by default.
 - Avoid decorative shapes unless they add meaning.
 
 Read [references/style-recipes.md](references/style-recipes.md) when choosing spacing, colors, typography, or container patterns.
@@ -203,6 +204,10 @@ Do not shrink text first just to preserve a crowded layout.
 - Split dense systems into 2 to 4 containers instead of one crowded board.
 - Use larger nodes for labels longer than 2 or 3 words.
 - Use smaller font sizes for diamonds and narrow nodes than for wide service blocks.
+- Re-layout nodes before accepting connector crossings.
+- Prefer moving nodes into cleaner rows or columns before adding bent arrows.
+- If two subsystems create many crossings, separate them into containers or split the diagram.
+- Only accept a small number of crossings when the semantic structure would become less clear without them.
 
 ## What To Avoid
 
@@ -211,6 +216,7 @@ Do not shrink text first just to preserve a crowded layout.
 - Do not rotate elements unless absolutely necessary.
 - Do not place paragraphs inside nodes.
 - Do not create tangled connectors if a container split would simplify the diagram.
+- Do not keep a crossing-heavy layout just because the first placement fit on the canvas.
 - Do not add sketch noise when the goal is a clean professional output.
 
 ## PNG Export
@@ -241,6 +247,7 @@ Before returning the result, verify:
 - Diamond labels sit inside the safe center area.
 - Arrow labels do not collide with lines, nodes, or arrowheads.
 - Connected arrows remain attached when nodes are dragged inside Excalidraw.
+- Connector crossings are minimized and clearly intentional if any remain.
 - The palette is limited and consistent.
 
 Read [references/output-checklist.md](references/output-checklist.md) for the final pass.

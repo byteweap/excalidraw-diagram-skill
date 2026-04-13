@@ -108,6 +108,8 @@ Do not reduce font size first for standard nodes.
 - Keep arrows mostly horizontal or vertical
 - Avoid multi-bend connectors unless routing is necessary
 - Use muted connector color instead of pure black for dense diagrams
+- Prefer reordering nodes over routing a line through the middle of other connections
+- Use bends to avoid one or two localized conflicts, not to preserve a fundamentally messy layout
 
 ## Containers
 
